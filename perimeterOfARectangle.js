@@ -6,5 +6,5 @@ console.log(output); // --> 14
 */
 
 function computePerimeterOfARectangle(length, width) {
-  return (length + width) / 2;
+  return (length + width) * 2;
 }
