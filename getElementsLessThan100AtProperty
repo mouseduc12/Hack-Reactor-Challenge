@@ -1,0 +1,15 @@
+function getElementsLessThan100AtProperty(obj, key) {
+  let newArray = Object.values(obj[key])
+  let anotherArray = []
+  for (let i = 0; i < newArray.length; i++){
+    if(newArray[i] < key){
+      anotherArray.push(newArray[i])
+    }
+  }
+  return anotherArray;
+}
+var obj = {
+  key: [1000, 20, 50, 500]
+};
+var output = getElementsLessThan100AtProperty(obj, 'key');
+console.log(output); // --> [20, 50]
